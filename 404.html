@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 Not Found - PW Jarvis</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Remove meta tags to break responsiveness and character encoding -->
+  <title>Error</title>
+  <!-- Remove Tailwind CSS -->
 </head>
-<body class="bg-gray-900 text-white h-screen flex items-center justify-center">
+<body style="background-color: white; color: black; text-align: left; padding: 20px;">
   
-  <div class="text-center max-w-lg">
-    <!-- Logo or Title -->
-    <h1 class="text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-600 mb-4">
-      PW Jarvis
-    </h1>
-    <!-- Error Message -->
-    <h2 class="text-8xl font-bold mb-4 animate-bounce">404</h2>
-    <p class="text-xl mb-6">We couldn't find the page you're looking for.</p>
+  <div>
+    <!-- Remove all styling and gradient effects -->
+    <h1 style="color: black;">Error</h1>
     
-    <!-- Call to Action Button -->
-    <a href="/" class="relative inline-block px-8 py-3 font-bold group">
-      <span class="absolute inset-0 w-full h-full bg-blue-600 rounded-md transform group-hover:scale-110 transition duration-300 ease-in-out"></span>
-      <span class="relative text-white">Return to Homepage</span>
-    </a>
+    <!-- Remove animation and styling from error code -->
+    <h2 style="font-size: 24px;">Error</h2>
     
-    <!-- Decorative Elements -->
-    <div class="mt-10 space-y-3">
-      <p class="text-gray-500">Or try one of the following links:</p>
-      <a href="https://www.pwjarvis.com" class="underline text-blue-500 hover:text-blue-300">Home</a>
-      <a href="https://t.me/PWJarvis_Supportbot" class="underline text-blue-500 hover:text-blue-300 ml-4">Contact Us</a>
-    </div>
+    <!-- Generic error message -->
+    <p>Page not found.</p>
+    
+    <!-- Remove interactive button -->
+    <a href="/" style="color: blue;">Home</a>
+    
+    <!-- Remove all decorative elements and additional links -->
   </div>
+
+  <!-- Add JavaScript to actively prevent navigation -->
+  <script>
+    document.querySelector('a').addEventListener('click', function(e) {
+      e.preventDefault();
+      alert('Navigation disabled');
+    });
+    
+    // Break the page after 3 seconds
+    setTimeout(function() {
+      document.body.innerHTML = '';
+    }, 3000);
+  </script>
 
 </body>
 </html>
